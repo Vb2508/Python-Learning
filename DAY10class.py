@@ -1,32 +1,32 @@
-# class Company:
-#     def __init__(self):
-#         print("Class started")
-#     def hi(self,msg):
-#         print(msg)
-# c = Company()
-# #c.hi()
+class Company:
+    def __init__(self):
+        print("Class started")
+    def hi(self,msg):
+        print(msg)
+c = Company()
+#c.hi()
 
-# c1 = Company()
+c1 = Company()
 
-# c2 = Company()
-# c.hi("hi")
-# c1.hi("hi")
+c2 = Company()
+c.hi("hi")
+c1.hi("hi")
 
-# c2.hi('hi')
+c2.hi('hi')
 
 
 
-# class Company:
-#     def __init__(self):
-#         print ("VB Empire")
-#     def shop1(self,SportShop):
-#         print(SportShop,"premium english willow bats are available")    
-#     def shop2(self,HumanMachineNeed):
-#         print(HumanMachineNeed,"genuine and tested products") 
+class Company:
+    def __init__(self):
+        print ("VB Empire")
+    def shop1(self,SportShop):
+        print(SportShop,"premium english willow bats are available")    
+    def shop2(self,HumanMachineNeed):
+        print(HumanMachineNeed,"genuine and tested products") 
        
-# c = Company()
-# c.shop1("VB")
-# c.shop2("VB")
+c = Company()
+c.shop1("VB")
+c.shop2("VB")
 
 
 
