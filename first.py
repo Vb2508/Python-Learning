@@ -16,10 +16,8 @@ myhobbies = ["palying","cricket"]
 name = 'vivek'
 age = 21
 
-nutrietnts = {
-    "kasehw":'hshshshssh',
-    "almond":'sssss'
-}
+nutrietnts = { "kasehw":'hshshshssh', "almond":'sssss' }
+
 myteams = ['']
 
 
