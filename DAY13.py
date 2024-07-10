@@ -1,6 +1,7 @@
 class Contact:
     def __init__(self):
         self.ContatctList=[]
+
     def addcontact(self,contact):
         print(contact,"added successfully")
         self.ContatctList.append(contact)
@@ -10,7 +11,7 @@ class Contact:
     def showcontactlist(self):
         for item in self.ContatctList:
             print(item)
-        print(self.ContatctList,"final list")
+            print(self.ContatctList,"final list")
 
 
     def removeContact(self,id):
@@ -29,6 +30,7 @@ B=Contact()
 B.addcontact({"id":1,"ContactName":"vivek b","ContactNumber":"9049391822"})
 B.addcontact({"id":2,"ContactName":"vivek b1","ContactNumber":"8237253494"})
 B.addcontact({"id":3,"ContactName":"Malak","ContactNumber":"9518937690"})
+B.addcontact({"id":4,"ContactName":"cricket","ContactNumber":""})
 B.replaceContact(2,"gggggggg")
-B.removeContact(1)
+B.removeContact(2)
 B.showcontactlist()
