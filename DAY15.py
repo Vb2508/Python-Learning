@@ -20,24 +20,24 @@ class Contact:
     def showcontactlist(self):
         for item in self.ContatctList:
             print(item)
-        # print(self.ContatctList,"final list")
+        print(self.ContatctList,"final list")
 
 
     def removeContact(self,id):
         for index,item in enumerate(self.ContatctList):
             if id == item ["id"]:
              self.ContatctList.pop(index)
-            #  print(item,"removed contact")
+             print(item,"removed contact")
 
     def replaceContact(self,id,key, value):
         for item in self.ContatctList:
             if id==item["id"]:
-                   # print(item)
-                    item.update({key:value})
-                    print(item,"updated id")
+             print(item)
+            item.update({key:value})
+            print(item,"updated id")
 B=Contact()
 B.addcontact({"ContactName":"vivek b","ContactNumber":"9049391822"})
 B.addcontact({"ContactName":"vivek b1","ContactNumber":"8237253494"})
 B.addcontact({"ContactName":"Malak","ContactNumber":"9518937690"})
-#B.replaceContact(2,"ContactName","vivek b01")
-# B.removeContact(1)
+B.replaceContact(2,"ContactName","vivek b01")
+B.removeContact(1)
