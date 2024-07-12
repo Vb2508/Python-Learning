@@ -1,8 +1,20 @@
 class Voting:
-    def __init__(self):
+    def _init_(self):
         self.voterslist=[]
         self.title='Hi Voters'
         self.totalVote=0
+        self.voteMachine=[
+            {
+                "name":"A",
+                "id":1000,
+                "total":0
+            },
+            {
+                "name":"B",
+                "id":2000,
+                "total":0
+            }
+        ]
 
 
 
@@ -15,10 +27,12 @@ class Voting:
             return
         if result==True:
             print('Go and Vote')
+
             self.totalVote= self.totalVote+1
             self.voterslist.append(voter)
             print(self.voterslist, "adding voter")
-            print(self.totalVote)    
+            print(self.totalVote) 
+
         else:
             print('You are not eligible to Vote')    
         
@@ -33,22 +47,13 @@ class Voting:
             if id==item["id"]:
                 return True
         return None
+    
 v=Voting()
-v.allowVoterForVoting({'id':1,'name':'Dnyaneshwar','age':26})
+v.allowVoterForVoting({'id':1,'name':'Dnyaneshwar','age':26,"candidateId":1000})
 v.allowVoterForVoting ({'id':2,'name':'Swapnil','age':30})
 v.allowVoterForVoting({'id':3,'name':'Billa','age':32})
-v.allowVoterForVoting({'id':3,'name':'Billas','age':32}) 
+v.allowVoterForVoting({'id':3,'name':'Billas','age':32})
 
-
-
-
-
-
-
-
-
-
-# chatGPT code
 
 
 
